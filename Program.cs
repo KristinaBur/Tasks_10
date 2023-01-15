@@ -28,7 +28,7 @@ int Exponentiate(int numberA, int numberB)
 9012 -> 12  */
 
 
-Console.Write("Введите число A: ");
+/*Console.Write("Введите число A: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 
   int SumNumber(int numberA)
@@ -47,6 +47,21 @@ int numberA = Convert.ToInt32(Console.ReadLine());
   }
 
 int sumNumber = SumNumber(numberA);
-Console.WriteLine("Сумма цифр в числе: " + sumNumber);
+Console.WriteLine("Сумма цифр в числе: " + sumNumber);*/
 
+
+/*Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. (числа берете любые)*/
+
+int[] Array = GetArray(8); 
+Console.Write($"[{String.Join(";", Array)}]"); 
+ 
+int[] GetArray (int size) 
+{ 
+    int[] Array = new int[size]; 
+    for (int i = 0; i < size; i++) 
+    { 
+        Array[i] = new Random().Next(100); 
+    } 
+    return Array; 
+}
 
